@@ -5,5 +5,9 @@ public class TestaMetodo {
 		contaExemplo.saldo = 100;
 		contaExemplo.deposita(50);
 		System.out.println("Conta exemplo - Saldo atualizado: " + contaExemplo.saldo);
+		
+		boolean conseguiuSacar = contaExemplo.saca(20);
+		System.out.println("Conta exemplo - Saque realizado? " + conseguiuSacar);
+		System.out.println("Conta exemplo - Saldo atualizado: " + contaExemplo.saldo);
 	}
 }
