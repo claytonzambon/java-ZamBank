@@ -26,8 +26,13 @@ public class TestaMetodo {
 		System.out.println("\nConta Marte - Saldo: R$ " + contaMarte.saldo);
 		
 		boolean conseguiuTransferir = contaMarte.transfere(300, contaVenus);
-		System.out.println("\nConta Marte - Transferiu? " + conseguiuTransferir);
+		if (conseguiuTransferir) {
+			System.out.println("\nConta Marte - Tranferência realizada com sucesso");
+		} else {
+			System.out.println("\nConta Marte - Não foi possível realizar a transferência");
+		}
 		System.out.println("Conta Marte - Saldo: R$ " + contaMarte.saldo);
+		
 
 	}
 }
